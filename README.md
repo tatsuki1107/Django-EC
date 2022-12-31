@@ -2,7 +2,8 @@
 
 ## ER diagram
 
-![image](https://user-images.githubusercontent.com/79680980/210130353-713ed911-4148-485f-a407-effb3a9d8108.png)
+![image](https://user-images.githubusercontent.com/79680980/210130365-cd495393-def2-462b-95a1-721f697fd68f.png)
+
 
 
 ## end point
