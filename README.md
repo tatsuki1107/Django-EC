@@ -10,26 +10,41 @@
 
 ### /api/create_user
 ・ body: {"user_name": str, "user_address": str}  
-・ response: {"user_id": str}  
+・ response: {"user_id": int}  
 ・ method: POST  
 　　   
 ### /api/login
 ・ body: {"user_name": str, "user_address": str}  
-・ response: {"user_id": str}  
+・ response: {"user_id": int}  
 ・ method: POST  
-  
+
+### /api/delete_user  
+・ body: {"user_id": int}  
+・ response: {"status": "ok"}  
+・ method: DELETE  
+
 ### /api/register_company  
 ・ body: {"company_name": str}  
 ・ response: {"status": "ok"}  
 ・ method: POST  
+  
+### /api/delete_company  
+・ body: {"company_id": int}  
+・ response: {"status": "ok"}  
+・ method: DELETE  
   
 ### /api/register_item  
 ・ body: {"item_name": str, "item_type": str, "company_id": str, "price": int}  
 ・ response: {"status": "ok"}  
 ・ method: POST  
 
+### /api/delete_item  
+・ body: {"item_id": int}  
+・ response: {"status": "ok"}  
+・ method: DELETE  
+
 ### /api/items
-・ response: [{"item_id": str}]  
+・ response: [{"item_id": int}]  
 ・ method: GET  
   
 ### /api/items/{item_id}
