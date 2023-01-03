@@ -1,14 +1,24 @@
 from dataclasses import field
 from rest_framework import serializers
-from .models import Users, Companies
+from .models import Users, Companies, Items, Likes
 
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = Users
-        fields = ("user_id", "user_name", "user_address")
+        fields = "__all__"
 
 class CompanySerializer(serializers.ModelSerializer):
     class Meta:
         model = Companies
-        fields = ("company_id", "company_name", "populality")
+        fields = "__all__"
+
+class ItemSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Items
+        fields = "__all__"
+
+class LikeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Likes
+        fields = "__all__"
