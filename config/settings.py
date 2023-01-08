@@ -125,6 +125,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = "static"
 
+AUTH_USER_MODEL = 'app.CustomUser'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
@@ -137,4 +139,5 @@ REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': [
         'django_filters.rest_framework.DjangoFilterBackend',
     ],
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.AutoSchema',
 }
